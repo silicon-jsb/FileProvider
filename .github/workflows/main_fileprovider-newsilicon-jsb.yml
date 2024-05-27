@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy dotnet core app to Azure Function App - FileProvider-newsilicon-jsb
+name: Build and deploy dotnet core app to Azure Function App - fileprovider-newsilicon-jsb
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'FileProvider-newsilicon-jsb'
+          app-name: 'fileprovider-newsilicon-jsb'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8A5EB8AB221B4EBCA3DBC731D914115B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AF406AB458734951AF0F3002A2C18D65 }}
