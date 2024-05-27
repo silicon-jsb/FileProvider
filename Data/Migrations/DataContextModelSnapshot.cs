@@ -38,7 +38,7 @@ namespace Data.Migrations
 
                     b.HasKey("FileName");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", (string)null);
                 });
 #pragma warning restore 612, 618
         }
